@@ -1,0 +1,168 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\usepackage{tabularx}
+\usepackage{array}
+
+\definecolor{headercolor}{RGB}{51, 51, 51}
+\definecolor{subtitlecolor}{RGB}{102, 102, 102}
+\definecolor{accentcolor}{RGB}{0, 102, 204}
+\definecolor{lightgray}{RGB}{245, 245, 245}
+
+\hypersetup{colorlinks=true, linkcolor=accentcolor, urlcolor=accentcolor}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=*, nosep, itemsep=0.5pt, label=\textbullet}
+
+\titleformat{\section}{\large\bfseries\centering}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+
+\newcommand{\experienceheader}[4]{
+    \textbf{\color{subtitlecolor}#1} \hfill #2\\
+    \textbf{#3} \hfill \textit{#4}\\
+}
+
+\newcommand{\achievementbox}[3]{
+    \begin{minipage}[t]{0.3\textwidth}
+        \centering
+        \colorbox{lightgray}{\makebox[0.9\textwidth][c]{
+            \begin{minipage}{0.85\textwidth}
+                \centering
+                \vspace{3pt}
+                #1\ \textbf{\footnotesize #2}\\[1pt]
+                {\footnotesize #3}
+                \vspace{3pt}
+            \end{minipage}
+        }}
+    \end{minipage}
+}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE\bfseries\color{headercolor} João Roberto Lawall Soares}\\[3pt]
+    {\large\color{subtitlecolor} Software Engineer | Backend Architecture | Cloud \& Web3}\\[4pt]
+    {\footnotesize +55 51 991363373 \quad • \quad blsoaresdev@gmail.com \quad • \quad \href{https://www.linkedin.com/in/joao-soares-golang/}{LinkedIn} \quad • \quad \href{https://github.com/Dnreikronos}{GitHub} \quad • \quad Lajeado, RS, Brazil (GMT-3)}
+\end{center}
+
+\section{Summary}
+{\footnotesize Backend Engineer with 6+ years building production systems in Golang. Focused on concurrency, distributed architectures, and microservices. Fixed a critical Kafka bug in a system processing 140M+ monthly transactions and cut database query times by up to 85\%. Contribute to the Zed code editor in Rust (70k+ GitHub stars) and build smart contracts in Solidity and Solana.}
+
+\section{Key Achievements}
+
+\vspace{2pt}
+\noindent
+\achievementbox{\faDiamond}{Concurrency \& Scale}{100\% resolution of critical Kafka bug affecting 140M+ monthly transactions with zero downtime.}
+\hfill
+\achievementbox{\faDiamond}{Performance}{Achieved 85\% query improvement (30s reduction) on MongoDB operations.}
+\hfill
+\achievementbox{\faDiamond}{Open Source}{32 PRs (8 merged) to Zed Editor (70k+ stars), contributing 3,000+ lines of Rust across 15+ subsystems.}
+
+\section{Experience}
+
+\vspace{2pt}
+\experienceheader{Platform Builders}{Brazil (Remote)}{Senior Golang Engineer}{Aug 2025 - Present}
+\textbf{\footnotesize Full-time | RD Sa\'{u}de - Brazil's largest pharmaceutical retailer}
+\begin{itemize}
+    \item {\footnotesize Fixed a concurrency bug in the invoicing pipeline that caused fiscal compliance failures across 140M+ monthly transactions. Used mutex-based synchronization to eliminate the race condition.}
+    \item {\footnotesize Added mutex-based locking to Apache Kafka consumers, reaching 99.99\% idempotency and stopping duplicate invoice generation entirely.}
+    \item {\footnotesize Migrated the database layer from Oracle to PostgreSQL. Rewrote execution plans and added targeted indexes, cutting query times by over 1 minute on the slowest queries.}
+    \item {\footnotesize Shipped 15+ features in Golang with zero production incidents. Reworked goroutine management to reduce system latency by 40\%.}
+    \item {\footnotesize Mentored 5 developers on Go concurrency patterns and architecture. Team velocity went up 30\% over the following quarter.}
+    \item {\footnotesize Tech Stack: Golang, Apache Kafka, PostgreSQL, Docker, OCI (Oracle Cloud), Angular, REST API, Microservices.}
+\end{itemize}
+
+\vspace{2pt}
+\experienceheader{Borderless Coding}{London Area, UK (Remote)}{Web3 Technical Mentor \& Ambassador}{Sep 2025 - Present}
+\textbf{\footnotesize Part-time}
+\begin{itemize}
+    \item {\footnotesize Mentored 60+ professionals on Solidity smart contracts and blockchain architecture. 95\% satisfaction rate across cohorts.}
+    \item {\footnotesize Ran 20+ live workshops on smart contract development using Foundry, Hardhat, and Remix IDE. 90\% of participants completed the full course.}
+    \item {\footnotesize Grew the technical community by 200\% with hands-on content covering Ethereum, Solana, and DeFi protocols.}
+\end{itemize}
+
+\vspace{2pt}
+\experienceheader{Docile Alimentos LTDA}{Lajeado, RS, Brazil (On-site)}{Backend Developer \& Systems Analyst}{Jan 2020 - Aug 2025}
+\textbf{\footnotesize Full-time}
+\begin{itemize}
+    \item {\footnotesize Built Golang backend services for data processing. Introduced concurrency patterns that increased throughput by 50\%.}
+    \item {\footnotesize Automated file imports with RPA, cutting 15 hours/week of manual work (70\% reduction).}
+    \item {\footnotesize Broke apart a Java/JSF monolith into Spring Boot microservices with an Angular frontend. Performance improved 40\%.}
+    \item {\footnotesize Rewrote indexes on 20+ PostgreSQL queries, averaging 45\% faster execution times.}
+    \item {\footnotesize Cut MongoDB query times by 85\% (30s faster) by reworking aggregation pipelines and adding targeted indexes.}
+    \item {\footnotesize Shipped 50+ bug fixes and features in Java, Spring Boot, JSF, and Jaspersoft Reports. 98\% delivered on schedule.}
+    \item {\footnotesize Tech Stack: Golang, Java, Spring Boot, NestJS, React, Angular, Docker, Linux, RPA, MongoDB, PostgreSQL, SQL Server, REST API.}
+\end{itemize}
+
+\section{Technical Skills}
+
+\vspace{2pt}
+\noindent{\footnotesize
+\textbf{Languages:} Go (Golang), Java, TypeScript, JavaScript, Rust (Solana), Solidity, SQL, Bash\\
+\textbf{Backend:} Spring Boot, Spring Framework, JSF, NestJS, Express.js, REST API, GraphQL, gRPC, Microservices\\
+\textbf{Frontend:} React, Angular, Next.js, TypeScript, JavaScript, HTML5, CSS3\\
+\textbf{Cloud:} AWS (EC2, S3, RDS, Lambda), Oracle Cloud Infrastructure (OCI), Docker, Kubernetes, CI/CD, Linux\\
+\textbf{Databases:} PostgreSQL, MongoDB, Redis, Elasticsearch, MySQL, SQL Server, Query Optimization\\
+\textbf{Messaging:} Apache Kafka, RabbitMQ, Amazon SQS, Event-Driven Architecture\\
+\textbf{Architecture:} Microservices, Clean Architecture, SOLID, Design Patterns, DDD, TDD, Distributed Systems Design, System Architecture\\
+\textbf{DevOps:} Docker, CI/CD Pipelines, Grafana, ELK Stack, Prometheus, Application Performance Monitoring\\
+\textbf{Web3:} Solidity, Solana (Rust), Smart Contracts, Ethereum, DeFi, NFTs, MetaMask, Phantom Wallet, ZK Proofs, NEAR Protocol\\
+\textbf{Tools:} Git, GitHub, GitLab, Jira, Agile/Scrum, RPA, Jaspersoft Reports, Salesforce CRM, Cursor, Claude
+}
+
+\section{Open Source Contributions}
+
+\vspace{2pt}
+\noindent\textbf{\footnotesize Zed Editor} • {\footnotesize\href{https://github.com/zed-industries/zed}{GitHub (70k+ Stars)} — Rust}\\
+{\footnotesize Contributor to Zed, a code editor written in Rust. 32 PRs submitted (8 merged) across 15+ subsystems in 30 days, totaling 3,000+ lines:}
+\begin{itemize}
+    \item {\footnotesize Found and fixed a macOS deadlock in the GPUI rendering framework where re-entrant key status changes froze the UI. (\href{https://github.com/zed-industries/zed/pull/51035}{\#51035} -- Merged)}
+    \item {\footnotesize Reworked picker selection logic across 11 files so non-selectable entries can no longer confirm unintended actions in the command palette. (\href{https://github.com/zed-industries/zed/pull/50705}{\#50705} -- Merged, +185/-51)}
+    \item {\footnotesize Fixed \texttt{formatter: "auto"} so it skips language servers that cannot actually format, instead of failing silently. (\href{https://github.com/zed-industries/zed/pull/50661}{\#50661} -- Merged)}
+    \item {\footnotesize Stopped the agent panel from stealing focus away from modals on workspace restore, which was breaking keyboard shortcuts. (\href{https://github.com/zed-industries/zed/pull/50511}{\#50511} -- Merged, +116/-62)}
+    \item {\footnotesize Also contributed to GPUI (font fallback, drag states), DAP debugger (source fetching, error interpolation), editor (scrollbar layout, code folding), and platform-specific bugs on macOS and Linux/X11. (\href{https://github.com/zed-industries/zed/pulls?q=author\%3ADnreikronos}{View all PRs})}
+    \item {\footnotesize Added Dune package management support to the OCaml extension for automatic LSP detection in \texttt{dune}-based projects. (\href{https://github.com/zed-extensions/ocaml/pull/28}{\#28})}
+\end{itemize}
+
+\section{Projects}
+
+\vspace{2pt}
+\noindent\textbf{\footnotesize Crypto-Tip | Decentralized Tipping Platform} • {\footnotesize\href{https://github.com/Dnreikronos/crypto-tip}{GitHub (34 Stars)}}\\
+{\footnotesize Smart contracts in Solidity (Ethereum) and Rust (Solana) for open-source funding. Integrates MetaMask and Phantom wallets.}
+
+\vspace{2pt}
+\noindent\textbf{\footnotesize givemoney.fun | Web3 Streaming Donation Platform}\\
+{\footnotesize Web3 app for Twitch/Kick/YouTube streamers to receive crypto donations. Solidity and Solana smart contracts with reentrancy guards.}
+
+\vspace{2pt}
+\noindent\textbf{\footnotesize Veste AI | AI-Powered Fashion Assistant} • {\footnotesize\href{https://github.com/Dnreikronos/HB02-2025_braindancers}{GitHub}}\\
+{\footnotesize Golang backend that uses the Google Gemini API to analyze outfits. Built at a hackathon. REST API with cloud-based image processing.}
+
+\vspace{2pt}
+\noindent\textbf{\footnotesize Proof Of Learn | AI + Web3 Platform} • {\footnotesize\href{https://github.com/Dnreikronos/proof-of-learn}{GitHub (NearX \& ZKVerify Hackathon)}}\\
+{\footnotesize Generates AI-powered learning roadmaps with on-chain incentives. Uses NEAR Protocol and Zero-Knowledge Proofs for NFT credential issuance.}
+
+\vspace{2pt}
+\noindent\textbf{\footnotesize Pattpay | Web3 Payment Gateway} • {\footnotesize\href{https://github.com/Dnreikronos/pattpay}{GitHub (Cypherpunk Hackathon)}}\\
+{\footnotesize Subscription billing on Solana. Smart contracts handle recurring payments with sub-second finality using SPL tokens.}
+
+\section{Education}
+
+\vspace{2pt}
+\noindent\textbf{\footnotesize Universidade do Vale do Taquari - Univates} \hfill {\footnotesize 2021 - 2025}\\
+{\footnotesize Bachelor's Degree, Computer Science}
+
+\section{Languages}
+
+\vspace{2pt}
+\begin{center}
+{\footnotesize \textbf{English} - Proficient (Professional Working Proficiency) \quad\quad \textbf{Portuguese} - Native Speaker}
+\end{center}
+
+\end{document}
