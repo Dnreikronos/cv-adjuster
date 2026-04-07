@@ -1,0 +1,93 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{leftmargin=*, nosep, itemsep=0.5pt, label=\textbullet}
+
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+
+\newcommand{\experienceheader}[4]{
+    \textbf{#1} \hfill #2\\
+    \textbf{#3} \hfill \textit{#4}\\
+}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE\bfseries Jo\~{a}o Roberto Lawall Soares}\\[3pt]
+    {\large Senior Software Engineer | Backend Services | Microservices Architecture}\\[4pt]
+    {\footnotesize +55 51 991363373 | blsoaresdev@gmail.com | \href{https://www.linkedin.com/in/joao-soares-golang/}{LinkedIn} | \href{https://github.com/Dnreikronos}{GitHub} | Lajeado, RS, Brazil (GMT-3)}
+\end{center}
+
+\section{Professional Summary}
+
+Senior Backend Engineer with 6+ years designing and maintaining production services in Golang. Expert in microservices architecture, distributed systems, and cloud infrastructure (AWS, OCI). Proven track record building scalable services that handle 140M+ monthly transactions with 99.99\% reliability. Passionate about engineering standards, system design, and leading teams through high-growth environments.
+
+\section{Professional Experience}
+
+\vspace{2pt}
+\experienceheader{Platform Builders}{Brazil (Remote)}{Senior Golang Engineer}{Aug 2025 - Present}
+\textbf{\footnotesize Full-time | RD Saúde, Brazil's largest pharmaceutical retailer}
+\begin{itemize}
+    \item {\footnotesize Designed and shipped 15+ backend services in Golang with zero production incidents in a rapidly growing startup environment. Reworked goroutine management to reduce system latency by 40\%.}
+    \item {\footnotesize Fixed critical concurrency bug in invoicing pipeline affecting 140M+ monthly transactions. Implemented mutex-based synchronization across Apache Kafka consumers, achieving 99.99\% idempotency and eliminating duplicate invoice generation.}
+    \item {\footnotesize Migrated database layer from Oracle to PostgreSQL. Optimized execution plans and added targeted indexes, cutting query times by over 1 minute on slowest operations.}
+    \item {\footnotesize Improved engineering standards across growing team. Mentored 5 developers on Golang concurrency patterns and system architecture, increasing team velocity by 30\%.}
+    \item {\footnotesize Tech Stack: Golang, Apache Kafka, PostgreSQL, Docker, REST API, Microservices, OCI Cloud.}
+\end{itemize}
+
+\vspace{2pt}
+\experienceheader{Docile Alimentos LTDA}{Lajeado, RS, Brazil (On-site)}{Backend Developer \& Systems Architect}{Jan 2020 - Aug 2025}
+\textbf{\footnotesize Full-time}
+\begin{itemize}
+    \item {\footnotesize Built and maintained backend services in Golang, Java, and Spring Boot. Introduced concurrency patterns that increased throughput by 50\% and improved system reliability.}
+    \item {\footnotesize Architected microservices refactoring: broke apart Java/JSF monolith into Spring Boot microservices with React/Angular frontends, achieving 40\% performance improvement.}
+    \item {\footnotesize Optimized database queries across PostgreSQL and MongoDB at scale. Rewrote indexes on 20+ PostgreSQL queries (avg 45\% improvement) and achieved 85\% query improvement on MongoDB by reworking aggregation pipelines.}
+    \item {\footnotesize Shipped 50+ features and bug fixes across backend and frontend systems with 98\% on-time delivery rate in fast-paced environment.}
+    \item {\footnotesize Tech Stack: Golang, Java, Spring Boot, NestJS, React, Angular, PostgreSQL, MongoDB, Docker, REST API, CI/CD.}
+\end{itemize}
+
+\section{Technical Skills}
+
+\vspace{2pt}
+\noindent{\footnotesize
+\textbf{Languages:} Go (Golang), Java, TypeScript, JavaScript, SQL, Bash\\
+\textbf{Backend \& Services:} Spring Boot, Spring Framework, NestJS, Express.js, REST API, gRPC, GraphQL, Microservices, System Design\\
+\textbf{Databases:} PostgreSQL, MySQL, MongoDB, Redis, Elasticsearch, Query Optimization\\
+\textbf{Cloud \& DevOps:} AWS (EC2, S3, RDS, Lambda), Oracle Cloud Infrastructure (OCI), Docker, Kubernetes, CI/CD Pipelines, Linux\\
+\textbf{Messaging \& Events:} Apache Kafka, RabbitMQ, Amazon SQS, Event-Driven Architecture\\
+\textbf{Architecture:} Distributed Systems Design, Microservices, Clean Architecture, SOLID, Design Patterns, System Architecture, Concurrency Patterns\\
+\textbf{Monitoring:} Grafana, ELK Stack, Prometheus, Application Performance Monitoring\\
+\textbf{Tools:} Git, GitHub, GitLab, Jira, Agile/Scrum\\
+}
+
+\section{Notable Projects}
+
+\vspace{2pt}
+\noindent\textbf{\footnotesize Auto-Issue: Autonomous GitHub Issue Agent} | \href{https://github.com/yuribodo/auto-issue}{GitHub}\\
+{\footnotesize Go backend for AI-powered code generation system. Implemented multi-provider agent system, work queue concurrency limiter, git worktree isolation, SSE real-time streaming, and REST API with 15+ endpoints. Backend uses GORM with PostgreSQL for persistence.}
+
+\vspace{2pt}
+\noindent\textbf{\footnotesize Veste AI: AI Fashion Assistant} | \href{https://github.com/Dnreikronos/HB02-2025_braindancers}{GitHub}\\
+{\footnotesize Golang backend service integrating Google Gemini API for image analysis. Built at hackathon. REST API with cloud-based image processing pipeline.}
+
+\section{Education}
+
+\vspace{2pt}
+\noindent\textbf{\footnotesize Universidade do Vale do Taquari - Univates} \hfill {\footnotesize 2021 - 2025}\\
+{\footnotesize Bachelor's Degree, Computer Science}
+
+\section{Languages}
+
+\vspace{2pt}
+{\footnotesize \textbf{English:} Proficient (Professional Working Proficiency) | \textbf{Portuguese:} Native Speaker}
+
+\end{document}

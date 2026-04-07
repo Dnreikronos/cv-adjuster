@@ -17,7 +17,6 @@ Claude then:
 1. Analyzes the job description to extract required skills, keywords, qualifications, and responsibilities
 2. Rewrites and reorders CV content to maximize relevance to the target role
 3. Outputs the adjusted LaTeX file as `cv_output.tex`
-4. Compiles it to PDF (`cv_output.pdf`)
 
 ## ATS Optimization Rules
 
