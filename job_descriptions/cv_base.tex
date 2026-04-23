@@ -62,7 +62,7 @@
 \hfill
 \achievementbox{\faDiamond}{Performance}{Achieved 85\% query improvement (30s reduction) on MongoDB operations.}
 \hfill
-\achievementbox{\faDiamond}{Open Source}{32 PRs (8 merged) to Zed Editor (70k+ stars), contributing 3,000+ lines of Rust across 15+ subsystems.}
+\achievementbox{\faDiamond}{Open Source}{53 PRs (19 merged) to Zed Editor (70k+ stars), contributing 5,000+ lines of Rust across 15+ subsystems.}
 
 \section{Experience}
 
@@ -120,17 +120,33 @@
 
 \vspace{2pt}
 \noindent\textbf{\footnotesize Zed Editor} • {\footnotesize\href{https://github.com/zed-industries/zed}{GitHub (70k+ Stars)} — Rust}\\
-{\footnotesize Contributor to Zed, a code editor written in Rust. 32 PRs submitted (8 merged) across 15+ subsystems in 30 days, totaling 3,000+ lines:}
+{\footnotesize Contributor to Zed, a code editor written in Rust. 53 PRs submitted (19 merged) across 15+ subsystems, totaling 5,000+ lines:}
 \begin{itemize}
     \item {\footnotesize Found and fixed a macOS deadlock in the GPUI rendering framework where re-entrant key status changes froze the UI. (\href{https://github.com/zed-industries/zed/pull/51035}{\#51035} -- Merged)}
     \item {\footnotesize Reworked picker selection logic across 11 files so non-selectable entries can no longer confirm unintended actions in the command palette. (\href{https://github.com/zed-industries/zed/pull/50705}{\#50705} -- Merged, +185/-51)}
     \item {\footnotesize Fixed \texttt{formatter: "auto"} so it skips language servers that cannot actually format, instead of failing silently. (\href{https://github.com/zed-industries/zed/pull/50661}{\#50661} -- Merged)}
     \item {\footnotesize Stopped the agent panel from stealing focus away from modals on workspace restore, which was breaking keyboard shortcuts. (\href{https://github.com/zed-industries/zed/pull/50511}{\#50511} -- Merged, +116/-62)}
-    \item {\footnotesize Also contributed to GPUI (font fallback, drag states), DAP debugger (source fetching, error interpolation), editor (scrollbar layout, code folding), and platform-specific bugs on macOS and Linux/X11. (\href{https://github.com/zed-industries/zed/pulls?q=author\%3ADnreikronos}{View all PRs})}
-    \item {\footnotesize Added Dune package management support to the OCaml extension for automatic LSP detection in \texttt{dune}-based projects. (\href{https://github.com/zed-extensions/ocaml/pull/28}{\#28})}
+    \item {\footnotesize Fixed SVG renderer not rendering text when system fonts are unavailable in GPUI. (\href{https://github.com/zed-industries/zed/pull/51623}{\#51623} -- Merged, +120/-7)}
+    \item {\footnotesize Fixed visible escape characters in LSP diagnostic messages rendered via markdown. (\href{https://github.com/zed-industries/zed/pull/51766}{\#51766} -- Merged, +195/-27)}
+    \item {\footnotesize Fixed deleted files persisting in project search results. (\href{https://github.com/zed-industries/zed/pull/50551}{\#50551} -- Merged, +175/-18)}
+    \item {\footnotesize Improved code folding to include closing delimiter on same line. (\href{https://github.com/zed-industries/zed/pull/50090}{\#50090} -- Merged, +234/-26)}
+    \item {\footnotesize Fixed semantic tokens not appearing when opening buffer from multibuffer, a core editor feature for accurate syntax highlighting. (\href{https://github.com/zed-industries/zed/pull/53712}{\#53712} -- Merged)}
+    \item {\footnotesize Debugged and fixed terminal rendering missing the first line due to floating-point tolerance in the layout calculation. (\href{https://github.com/zed-industries/zed/pull/52111}{\#52111} -- Merged)}
+    \item {\footnotesize Reset terminal cursor blink on text send and keystroke actions to prevent visual inconsistency. (\href{https://github.com/zed-industries/zed/pull/53171}{\#53171} -- Merged)}
+    \item {\footnotesize Fixed git panel context menu jitter, improving UX consistency during rapid interactions. (\href{https://github.com/zed-industries/zed/pull/52217}{\#52217} -- Merged)}
+    \item {\footnotesize Also contributed to GPUI (font fallback, drag states), DAP debugger, theme selector, markdown rendering, and platform-specific fixes on macOS and Linux/X11. (\href{https://github.com/zed-industries/zed/pulls?q=author\%3ADnreikronos}{View all PRs})}
+    \item {\footnotesize 5 PRs (all merged) to the OCaml extension: added Dune package management support, MLX file support, LSP argument forwarding, and project root detection. (\href{https://github.com/zed-extensions/ocaml/pulls?q=author\%3ADnreikronos}{View all PRs})}
 \end{itemize}
 
 \section{Projects}
+
+\vspace{2pt}
+\noindent\textbf{\footnotesize DarkPool-Exchange | ZK Dark Pool DEX with Batch Auctions} • {\footnotesize\href{https://github.com/Dnreikronos/DarkPool-Exchange}{GitHub}}\\
+{\footnotesize DEX where orders stay private until settlement. Traders encrypt orders to the operator and the engine matches them in periodic batch auctions (every 5 seconds by default) with a clearing price per round. Built the Rust and Web3 layer: halo2 / arkworks circuits proving order validity, client-side proof generation in Rust (WASM + native CLI), the proof aggregator that batches individual proofs into one on-chain check, and integration with the Solidity verifier and settlement contract. Order size and price surface only after the round closes, cutting front-running and MEV exposure.}
+
+\vspace{2pt}
+\noindent\textbf{\footnotesize zkSettle | ZK Compliance Infrastructure for Solana Stablecoins} • {\footnotesize\href{https://github.com/yuribodo/zksettle}{GitHub}}\\
+{\footnotesize Solana compliance layer for stablecoin fintechs. Proves travel-rule and sanctions conformance without putting user PII on-chain. Built the Rust and Web3 side: an Anchor program with a Token-2022 Transfer Hook that verifies Groth16 proofs (BN254) via Solana \texttt{alt\_bn128} syscalls in under 200K compute units, nullifier storage on Light Protocol state compression, and the off-chain Rust workspace (issuer service, OFAC sanctions updater with a Sparse Merkle Tree, Helius-webhook indexer that pins attestations to Arweave, axum API gateway). Proof generation runs in the user's browser via Noir + WASM, so no PII ever leaves the device.}
 
 \vspace{2pt}
 \noindent\textbf{\footnotesize Auto-Issue | Autonomous GitHub Issue Agent} • {\footnotesize\href{https://github.com/yuribodo/auto-issue}{GitHub}}\\

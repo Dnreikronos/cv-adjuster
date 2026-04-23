@@ -1,0 +1,27 @@
+João Roberto Lawall Soares
+Lajeado, RS, Brazil
+blsoaresdev@gmail.com | +55 51 991363373
+LinkedIn: linkedin.com/in/blsoaresdev | GitHub: github.com/Dnreikronos
+
+April 23, 2026
+
+Apollo GraphQL
+GraphOS Team
+
+Hi,
+
+I've been writing Rust in public for a while now. 29 merged PRs to the Zed editor --- 5,800+ lines across 15 subsystems, everything from fixing a deadlock in the GPUI rendering framework to reworking event-driven state machines and tracing through async service resolution paths. That's the work I enjoy most: digging into complex systems, finding where they break, and making them not break.
+
+The GraphOS role caught my eye because it's basically that, but for infrastructure that matters at a different scale. I don't have GraphQL-specific experience, but I've spent years building fault-tolerant services and debugging production concurrency issues under real pressure. I maintain public APIs that other teams depend on, and I do on-call work where getting paged at 2am means fixing the problem, not forwarding it.
+
+My day job is running Go microservices that process 140M+ transactions per month. I've tracked down race conditions in Kafka consumers, profiled latency issues with pprof until I found the goroutine management patterns that were costing us 40% in overhead, and migrated a production database from Oracle to PostgreSQL without downtime. I own the CI/CD pipelines, the Kubernetes deployments, the Grafana dashboards. When something breaks, I'm the one who gets called.
+
+On the Rust side beyond Zed, I've built a batch auction settlement engine with halo2/arkworks cryptographic circuits compiled to WASM, and an API gateway in axum with proof verification handling 200K+ compute units of work per request. I write idiomatic Rust and I'm opinionated about it --- error handling should be honest about failure modes, types should prevent bugs at compile time, and an API that surprises its callers is a broken API.
+
+I also mentor engineers. I've coached 5 teammates on concurrency and distributed systems (team velocity went up 30%), and I've led 20+ workshops for 60+ developers. I like helping people get better at this stuff, and I prefer teams where code review feels collaborative.
+
+I'm based in Brazil (GMT-3) and have been remote since 2025. Comfortable with async work, on-call rotations, and direct customer-facing debugging when needed.
+
+Happy to walk through any of the Zed PRs or talk systems design whenever works.
+
+João Roberto Lawall Soares
