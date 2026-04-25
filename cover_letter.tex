@@ -13,36 +13,33 @@
 \textbf{Jo\~{a}o Roberto Lawall Soares}\\
 blsoaresdev@gmail.com\\
 +55 51 991363373\\
-Lajeado, RS, Brazil (GMT-3)\\
 \href{https://github.com/Dnreikronos}{github.com/Dnreikronos} \quad \href{https://www.linkedin.com/in/blsoaresdev/}{linkedin.com/in/blsoaresdev}
 \end{flushleft}
 
 \vspace{12pt}
 
 \begin{flushleft}
-April 23, 2026\\
+April 25, 2026\\
 \vspace{6pt}
-Armenotech Limited\\
-Cyprus
+OneSignal\\
+Senior Software Engineer -- Analytics Team
 \end{flushleft}
 
 \vspace{12pt}
 
-Dear Hiring Team,
+Hi,
 
-I've spent the last six years writing Go for production systems, and the past year or so doing it in a context that looks a lot like yours --- high-volume transaction processing, regulatory pressure, and infrastructure that can't go down.
+I'm applying for the Senior Software Engineer position on OneSignal's Analytics team. I've spent 6+ years building backend services in Go and Rust, and the combination of your scale (1.3T messages/year), your stack (Rust, Go, Kafka, Kubernetes), and the problem space -- turning messaging data into something customers can act on -- is exactly where I want to be working.
 
-Right now I'm a senior Go engineer at Platform Builders, working on a distributed system that processes 140M+ transactions per month for Brazil's largest pharmaceutical retailer. I've fixed concurrency bugs in Kafka consumers under real load, migrated a database layer from Oracle to PostgreSQL without taking the system offline, and reworked goroutine patterns that cut latency by 40\%. The whole stack runs on Docker and Kubernetes with CI/CD, and I've owned those pipelines end to end.
+At my current role, I work on a system that processes 140M+ monthly transactions through Apache Kafka. I tracked down a concurrency bug in the consumer pipeline that was causing duplicate invoices and fixed it with mutex-based synchronization. Zero downtime, no data loss. I also migrated our database layer from Oracle to PostgreSQL, which involved rewriting query plans and adding indexes that cut our slowest queries by over a minute. These are the kinds of problems I like: high-throughput distributed systems where getting the details wrong costs real money.
 
-The Stellar protocol work is what got me looking at Armenotech. I've already built in this space --- zkSettle is a compliance layer I wrote for stablecoin fintechs on Solana, handling travel-rule and sanctions checks without putting user data on-chain. I also built Pattpay, a payment gateway with recurring billing on Solana, and a dark pool DEX with batch auction settlement. So the fintech and blockchain side isn't aspirational for me, it's what I've been doing.
+On the Rust side, I contribute to the Zed code editor (70k+ GitHub stars). I've had 19 PRs merged across 15+ subsystems -- fixing a deadlock in the rendering framework, debugging terminal layout issues caused by floating-point precision, reworking selection logic across 11 files. It's given me a solid feel for large Rust codebases and the kind of careful systems thinking that comes with them.
 
-On Go specifically: I use modules, code generation, and templating daily. I write Godoc that people actually reference. I think in goroutines and channels. I've used pprof and delve to track down production issues, and the race detector is part of my regular workflow. I'm also comfortable with SQL --- I've optimized queries across PostgreSQL, SQL Server, and MongoDB in production.
+I use AI tooling heavily in my daily work. I built Auto-Issue, a Go application that takes GitHub issues, routes them to AI agents (Claude Code, Codex, or Gemini), and produces PRs with self-reviewed code. The backend handles orchestration, work queues, concurrency limiting, and git worktree isolation per issue. I also use Claude Code, Cursor, and Codex throughout my regular development workflow for code generation, reviews, and testing.
 
-I've mentored five engineers on concurrency and distributed systems, and our team velocity went up 30\% that quarter. I've run 20+ workshops for 60+ developers on blockchain architecture. I've been remote since 2025 and work well independently --- async communication, written documentation, self-directed work are all things I do without thinking about it.
+I've deployed and monitored services on Docker and Kubernetes, participated in on-call rotations, and written technical design documents for new features. I've worked with PostgreSQL and MongoDB extensively, including query optimization that brought an 85\% improvement on MongoDB aggregation pipelines. I design RESTful APIs and gRPC endpoints, and I follow clean architecture principles without being rigid about it.
 
-On the open source side, I have 19 merged PRs to the Zed editor (70k+ stars, Rust), across 15+ subsystems. It's where I stay sharp on systems-level work outside my day job.
-
-Happy to talk more about any of this whenever works for you.
+Happy to talk more about how my background fits what you're building on the Analytics team.
 
 \vspace{12pt}
 

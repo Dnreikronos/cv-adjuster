@@ -1,27 +1,25 @@
 João Roberto Lawall Soares
-Lajeado, RS, Brazil
 blsoaresdev@gmail.com | +55 51 991363373
 LinkedIn: linkedin.com/in/blsoaresdev | GitHub: github.com/Dnreikronos
 
-April 23, 2026
+April 25, 2026
 
-Apollo GraphQL
-GraphOS Team
+OneSignal
+Senior Software Engineer -- Analytics Team
 
 Hi,
 
-I've been writing Rust in public for a while now. 29 merged PRs to the Zed editor --- 5,800+ lines across 15 subsystems, everything from fixing a deadlock in the GPUI rendering framework to reworking event-driven state machines and tracing through async service resolution paths. That's the work I enjoy most: digging into complex systems, finding where they break, and making them not break.
+I'm applying for the Senior Software Engineer position on OneSignal's Analytics team. I've spent 6+ years building backend services in Go and Rust, and the combination of your scale (1.3T messages/year), your stack (Rust, Go, Kafka, Kubernetes), and the problem space -- turning messaging data into something customers can act on -- is exactly where I want to be working.
 
-The GraphOS role caught my eye because it's basically that, but for infrastructure that matters at a different scale. I don't have GraphQL-specific experience, but I've spent years building fault-tolerant services and debugging production concurrency issues under real pressure. I maintain public APIs that other teams depend on, and I do on-call work where getting paged at 2am means fixing the problem, not forwarding it.
+At my current role, I work on a system that processes 140M+ monthly transactions through Apache Kafka. I tracked down a concurrency bug in the consumer pipeline that was causing duplicate invoices and fixed it with mutex-based synchronization. Zero downtime, no data loss. I also migrated our database layer from Oracle to PostgreSQL, which involved rewriting query plans and adding indexes that cut our slowest queries by over a minute. These are the kinds of problems I like: high-throughput distributed systems where getting the details wrong costs real money.
 
-My day job is running Go microservices that process 140M+ transactions per month. I've tracked down race conditions in Kafka consumers, profiled latency issues with pprof until I found the goroutine management patterns that were costing us 40% in overhead, and migrated a production database from Oracle to PostgreSQL without downtime. I own the CI/CD pipelines, the Kubernetes deployments, the Grafana dashboards. When something breaks, I'm the one who gets called.
+On the Rust side, I contribute to the Zed code editor (70k+ GitHub stars). I've had 19 PRs merged across 15+ subsystems -- fixing a deadlock in the rendering framework, debugging terminal layout issues caused by floating-point precision, reworking selection logic across 11 files. It's given me a solid feel for large Rust codebases and the kind of careful systems thinking that comes with them.
 
-On the Rust side beyond Zed, I've built a batch auction settlement engine with halo2/arkworks cryptographic circuits compiled to WASM, and an API gateway in axum with proof verification handling 200K+ compute units of work per request. I write idiomatic Rust and I'm opinionated about it --- error handling should be honest about failure modes, types should prevent bugs at compile time, and an API that surprises its callers is a broken API.
+I use AI tooling heavily in my daily work. I built Auto-Issue, a Go application that takes GitHub issues, routes them to AI agents (Claude Code, Codex, or Gemini), and produces PRs with self-reviewed code. The backend handles orchestration, work queues, concurrency limiting, and git worktree isolation per issue. I also use Claude Code, Cursor, and Codex throughout my regular development workflow for code generation, reviews, and testing.
 
-I also mentor engineers. I've coached 5 teammates on concurrency and distributed systems (team velocity went up 30%), and I've led 20+ workshops for 60+ developers. I like helping people get better at this stuff, and I prefer teams where code review feels collaborative.
+I've deployed and monitored services on Docker and Kubernetes, participated in on-call rotations, and written technical design documents for new features. I've worked with PostgreSQL and MongoDB extensively, including query optimization that brought an 85% improvement on MongoDB aggregation pipelines. I design RESTful APIs and gRPC endpoints, and I follow clean architecture principles without being rigid about it.
 
-I'm based in Brazil (GMT-3) and have been remote since 2025. Comfortable with async work, on-call rotations, and direct customer-facing debugging when needed.
+Happy to talk more about how my background fits what you're building on the Analytics team.
 
-Happy to walk through any of the Zed PRs or talk systems design whenever works.
-
+Best regards,
 João Roberto Lawall Soares

@@ -8,7 +8,7 @@ This project adjusts a LaTeX CV to match specific job descriptions, optimizing f
 
 The user provides three inputs:
 
-1. **Base CV** (`cv_base.tex`) - LaTeX file containing all experience, education, projects, and skills
+1. **Base CV** (`cv_base.tex`) - LaTeX file containing all experience, education, projects, and skills - ALWAYS GET THE DATA FROM HERE TO GENERATE THE NEW CV ABOVE THE JD
 2. **Job Description** - pasted or attached as text
 3. **Skills list** - additional skills/keywords to incorporate
 
@@ -46,7 +46,13 @@ When adjusting the CV, follow these rules strictly:
 - **Simple bullet points** using `\item` or `\textbullet`
 - **No fancy LaTeX packages** that break text extraction (avoid `tikz` for layout, `fontawesome` icons, multi-column environments for content)
 
-### What NOT to Do
+### Humanizer Pass (Mandatory)
+- **Every CV rewrite MUST be run through `/humanizer`** before delivery — no exceptions
+- This removes AI-generated writing patterns (inflated language, promotional tone, em dash overuse, AI vocabulary, etc.)
+- Apply after all content edits are finalized but before PDF compilation
+- Also apply to cover letters when generated
+
+### What NEVER do(Follow that here strictly)
 - Never fabricate experience, skills, or qualifications the user doesn't have
 - Never remove truthful information just because it's not in the job description - deprioritize it instead
 - Never use "stuffing" (hiding white-on-white keywords) - this gets flagged
@@ -56,11 +62,16 @@ When adjusting the CV, follow these rules strictly:
 
 ```
 cv_adjuster/
-  CLAUDE.md          # This guide
-  cv_base.tex        # User's master CV with all experience (user provides)
-  cv_output.tex      # Generated ATS-optimized CV for the target role
-  cv_output.pdf      # Compiled PDF output
-  job_descriptions/  # Saved job descriptions for reference
+  CLAUDE.md              # This guide
+  cv_output.tex          # Generated ATS-optimized CV for the target role
+  cv_output.pdf          # Compiled PDF output
+  cover_letter.tex       # Generated cover letter (LaTeX source)
+  cover_letter.pdf       # Compiled cover letter PDF
+  cover_letter.txt       # Plain text version of cover letter
+  zed_contributions.md   # Zed editor contributions reference
+  zed_prs.md             # Zed PRs reference data
+  job_descriptions/      # Saved job descriptions for reference
+    cv_base.tex          # User's master CV with all experience
 ```
 
 ## LaTeX Compilation
@@ -68,14 +79,10 @@ cv_adjuster/
 To generate the PDF, compile with:
 
 ```bash
-pdflatex cv_output.tex
+tectonic cv_output.tex
 ```
 
-**Prerequisites**: A LaTeX distribution must be installed:
-- Windows: Install MiKTeX (https://miktex.org/) or TeX Live
-- After installing, restart the terminal so `pdflatex` is in PATH
-
-If the LaTeX file uses special fonts, use `xelatex` or `lualatex` instead of `pdflatex`.
+**Prerequisites**: Tectonic must be installed. It handles font/package downloads automatically — no separate TeX distribution needed.
 
 ## Interaction Pattern
 
@@ -87,8 +94,9 @@ When the user starts a new CV adjustment session:
 4. Analyze the job description and identify: required skills, preferred skills, responsibilities, seniority level, industry
 5. Draft `cv_output.tex` with ATS optimizations applied
 6. Show the user a summary of key changes made and why
-7. Compile to PDF
-8. If the user requests revisions, iterate on `cv_output.tex` and recompile
+7. Run `/humanizer` on `cv_output.tex` to remove AI-generated writing patterns and ensure natural, human-sounding language
+8. Compile to PDF
+9. If the user requests revisions, iterate on `cv_output.tex`, re-run `/humanizer`, and recompile
 
 ## Quality Checklist
 
