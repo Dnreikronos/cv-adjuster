@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(gh api:*)"
+      "Bash(gh api:*)",
+      "Bash(cp /home/fr/.claude/memory/MEMORY.md /home/fr/claude-skills/memory/MEMORY.md)",
+      "Bash(cp /home/fr/.claude/memory/feedback_use_commit_skill.md /home/fr/claude-skills/memory/)",
+      "Bash(cp /home/fr/.claude/memory/gotchas.md /home/fr/claude-skills/memory/)",
+      "Bash(cp /home/fr/.claude/memory/feedback_no_coauthored.md /home/fr/claude-skills/memory/)"
     ]
   }
 }

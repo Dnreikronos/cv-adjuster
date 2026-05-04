@@ -2,7 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[margin=1in]{geometry}
 \usepackage{hyperref}
-\usepackage{parskip}
+\usepackage[skip=6pt plus 1pt]{parskip}
 
 \hypersetup{colorlinks=true, urlcolor=blue}
 \pagestyle{empty}
@@ -16,34 +16,30 @@ blsoaresdev@gmail.com\\
 \href{https://github.com/Dnreikronos}{github.com/Dnreikronos} \quad \href{https://www.linkedin.com/in/blsoaresdev/}{linkedin.com/in/blsoaresdev}
 \end{flushleft}
 
-\vspace{12pt}
+\vspace{8pt}
 
 \begin{flushleft}
-April 25, 2026\\
-\vspace{6pt}
-OneSignal\\
-Senior Software Engineer -- Analytics Team
+May 1, 2026\\
+\vspace{4pt}
+Airbnb\\
+Senior Software Engineer, Insurance Platform
 \end{flushleft}
 
-\vspace{12pt}
+\vspace{8pt}
 
 Hi,
 
-I'm applying for the Senior Software Engineer position on OneSignal's Analytics team. I've spent 6+ years building backend services in Go and Rust, and the combination of your scale (1.3T messages/year), your stack (Rust, Go, Kafka, Kubernetes), and the problem space -- turning messaging data into something customers can act on -- is exactly where I want to be working.
+I'm applying for the Senior Software Engineer role on the Insurance Platform team. I've spent the last 6+ years building backend systems in Go and Java, and the work your team does on AirCover (travel insurance, host protection, liability, damage coverage) is the kind of problem I want to work on: high-stakes distributed systems where getting the details right matters.
 
-At my current role, I work on a system that processes 140M+ monthly transactions through Apache Kafka. I tracked down a concurrency bug in the consumer pipeline that was causing duplicate invoices and fixed it with mutex-based synchronization. Zero downtime, no data loss. I also migrated our database layer from Oracle to PostgreSQL, which involved rewriting query plans and adding indexes that cut our slowest queries by over a minute. These are the kinds of problems I like: high-throughput distributed systems where getting the details wrong costs real money.
+At my current role, I'm the technical lead on a platform that processes 140M+ monthly invoicing transactions for Brazil's largest pharmaceutical retailer. I fixed a concurrency bug in our Apache Kafka pipeline that was causing fiscal compliance failures, added idempotency controls that brought reliability to 99.99\%, and led a database migration from Oracle to PostgreSQL that cut our slowest queries by over a minute. I also set up the monitoring and logging stack we use to catch problems before they hit production.
 
-On the Rust side, I contribute to the Zed code editor (70k+ GitHub stars). I've had 19 PRs merged across 15+ subsystems -- fixing a deadlock in the rendering framework, debugging terminal layout issues caused by floating-point precision, reworking selection logic across 11 files. It's given me a solid feel for large Rust codebases and the kind of careful systems thinking that comes with them.
+Before that, I spent five years at Docile Alimentos where I led a monolith-to-microservices migration (Java/JSF to Spring Boot), cut MongoDB query times by 85\%, and shipped 50+ features across Java and Go. I worked closely with product and design on engineering decisions, which I understand is important on the Insurance Platform team too.
 
-I use AI tooling heavily in my daily work. I built Auto-Issue, a Go application that takes GitHub issues, routes them to AI agents (Claude Code, Codex, or Gemini), and produces PRs with self-reviewed code. The backend handles orchestration, work queues, concurrency limiting, and git worktree isolation per issue. I also use Claude Code, Cursor, and Codex throughout my regular development workflow for code generation, reviews, and testing.
+On my own time, I contribute to the Zed code editor in Rust (70k+ GitHub stars). I have 19 merged PRs across 15+ subsystems, including fixing a deadlock in the rendering framework and reworking selection logic across 11 files. I also built Auto-Issue, a Go application with a work queue, concurrency limiter, and SSE streaming that turns GitHub issues into reviewed PRs.
 
-I've deployed and monitored services on Docker and Kubernetes, participated in on-call rotations, and written technical design documents for new features. I've worked with PostgreSQL and MongoDB extensively, including query optimization that brought an 85\% improvement on MongoDB aggregation pipelines. I design RESTful APIs and gRPC endpoints, and I follow clean architecture principles without being rigid about it.
+The Insurance Platform role asks for experience with distributed systems, concurrency, SQL, monitoring, and cross-functional collaboration. That's what I do every day. I'd like to bring that experience to the AirCover program.
 
-Happy to talk more about how my background fits what you're building on the Analytics team.
-
-\vspace{12pt}
-
-Best regards,\\
+Best,\\
 Jo\~{a}o Roberto Lawall Soares
 
 \end{document}

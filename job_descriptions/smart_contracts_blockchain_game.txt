@@ -1,0 +1,20 @@
+Position: Smart Contracts Developer
+Location: Remote
+Budget: $70-110 per hour
+
+Project Overview:
+Players will explore a vast, immersive universe where every action, decision, and discovery is powered by blockchain, ensuring transparency, security, and true ownership.
+Utilizing the native currency, Xelora Coin, the game facilitates in-game transactions, rewards, and governance, creating a decentralized economy where players have control over their assets and influence over the game's development. Through blockchain integration, players can own, trade, and showcase NFTs representing characters, items, and land, fostering a genuine sense of ownership and value.
+
+Key Features:
+- Develop a high-quality 3D sci-fi game with engaging gameplay and storytelling.
+- Integrate blockchain features for secure transactions, NFT ownership, and governance.
+- Create a vibrant in-game economy powered by Xelora Coin.
+- Foster a community-driven development through player voting and participation.
+
+Responsibilities:
+- Develop, test, and deploy smart contracts for NFTs, tokens, and governance mechanisms using Solidity (or relevant blockchain language).
+- Ensure smart contract security through audits and best practices.
+- Integrate blockchain wallets (MetaMask, WalletConnect) into the game platform for seamless user transactions.
+- Implement blockchain-based features such as NFT minting, transfers, and marketplace functionalities.
+- Collaborate with front-end and game developers to connect blockchain features with the game environment.

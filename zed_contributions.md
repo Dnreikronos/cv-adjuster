@@ -2,14 +2,15 @@
 
 **GitHub Profile**: [Dnreikronos](https://github.com/Dnreikronos)
 **Period**: February 2026 - April 2026
-**Total PRs**: 54 (29 merged, 12 open/in review, 13 closed)
+**Total PRs**: 56 (30 merged, 12 open/in review, 14 closed)
 
 ---
 
-## Merged Contributions (29)
+## Merged Contributions (30)
 
 | # | Title | Files Changed | +/- | Merged |
 |---|-------|--------------|-----|--------|
+| #52583 | cli: Null stdio handles when spawning Zed on Windows | 1 | +4/-1 | 2026-04-27 |
 | #52773 | theme_selector: Revert theme when modal is dismissed by clicking outside | 2 | +42/-12 | 2026-04-23 |
 | #50860 | terminal_view: Show "Add to Agent Thread" on first right-click | 1 | +13/-10 | 2026-04-23 |
 | #53571 | Stop eagerly clearing available code actions on row change | 3 | +162/-151 | 2026-04-22 |
@@ -44,8 +45,8 @@
 
 | # | Title | Files Changed | +/- |
 |---|-------|--------------|-----|
-| #52666 | Show failed servers in language server menu | 2 | +2/-5 |
-| #52583 | cli: Null stdio handles when spawning Zed on Windows | 1 | +4/-1 |
+| #55129 | Fix JSDoc injection layers being duplicated | 5 | +494/-9 |
+| #54806 | editor: Cache code actions per viewport instead of per selection | 4 | +540/-113 |
 | #52104 | Focus buffer/multibuffer when clicking a file in the Git panel | 1 | +88/-6 |
 | #51626 | gpui: Preserve font weight and style when falling back to alternate fonts | 1 | +326/-142 |
 | #51535 | gpui: Suppress hover states and cursor changes during mouse drag | 3 | +74/-7 |
@@ -85,8 +86,8 @@
 - **Code quality**: bug fixing, UX improvements, test coverage across 11 files in a single PR
 
 ### Impact Summary
-- **Total lines contributed**: ~5,800+ additions across 54 PRs
-- **Merged lines**: ~2,600+ additions across 29 merged PRs
+- **Total lines contributed**: ~6,800+ additions across 56 PRs
+- **Merged lines**: ~2,600+ additions across 30 merged PRs
 - **Codebase breadth**: Touched 80+ files across 15+ subsystems
 - **Bug fixes**: Resolved deadlocks, focus stealing, rendering glitches, keyboard input issues, clipboard bugs
 - **Feature work**: DAP source viewing, split diff gutter UI, agent context management, terminal cursor styles, code action improvements

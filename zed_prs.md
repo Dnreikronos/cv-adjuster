@@ -1,13 +1,14 @@
 # Zed PRs — Author: Dnreikronos
 
-Total: 54 PRs | 29 Merged | 12 Open | 13 Closed
+Total: 56 PRs | 30 Merged | 12 Open | 14 Closed
 
 ---
 
-## Merged (29)
+## Merged (30)
 
 | # | Title | Merged |
 |---|-------|--------|
+| [#52583](https://github.com/zed-industries/zed/pull/52583) | cli: Null stdio handles when spawning Zed on Windows | 2026-04-27 |
 | [#52773](https://github.com/zed-industries/zed/pull/52773) | theme_selector: Revert theme when modal is dismissed by clicking outside | 2026-04-23 |
 | [#50860](https://github.com/zed-industries/zed/pull/50860) | terminal_view: Show "Add to Agent Thread" on first right-click | 2026-04-23 |
 | [#53571](https://github.com/zed-industries/zed/pull/53571) | Stop eagerly clearing available code actions on row change | 2026-04-22 |
@@ -44,8 +45,8 @@ Total: 54 PRs | 29 Merged | 12 Open | 13 Closed
 
 | # | Title | Opened |
 |---|-------|--------|
-| [#52666](https://github.com/zed-industries/zed/pull/52666) | Show failed servers in language server menu | 2026-03-29 |
-| [#52583](https://github.com/zed-industries/zed/pull/52583) | cli: Null stdio handles when spawning Zed on Windows | 2026-03-27 |
+| [#55129](https://github.com/zed-industries/zed/pull/55129) | Fix JSDoc injection layers being duplicated | 2026-04-29 |
+| [#54806](https://github.com/zed-industries/zed/pull/54806) | editor: Cache code actions per viewport instead of per selection | 2026-04-24 |
 | [#52104](https://github.com/zed-industries/zed/pull/52104) | Focus buffer/multibuffer when clicking a file in the Git panel | 2026-03-21 |
 | [#51626](https://github.com/zed-industries/zed/pull/51626) | gpui: Preserve font weight and style when falling back to alternate fonts | 2026-03-15 |
 | [#51535](https://github.com/zed-industries/zed/pull/51535) | gpui: Suppress hover states and cursor changes during mouse drag | 2026-03-13 |
@@ -59,10 +60,11 @@ Total: 54 PRs | 29 Merged | 12 Open | 13 Closed
 
 ---
 
-## Closed / Not Merged (13)
+## Closed / Not Merged (14)
 
 | # | Title | Opened |
 |---|-------|--------|
+| [#52666](https://github.com/zed-industries/zed/pull/52666) | Show failed servers in language server menu | 2026-03-29 |
 | [#53314](https://github.com/zed-industries/zed/pull/53314) | Disable code actions button when buffer search bar is focused | 2026-04-07 |
 | [#52377](https://github.com/zed-industries/zed/pull/52377) | editor: Fix inlay hints not showing on editor open | 2026-03-25 |
 | [#52365](https://github.com/zed-industries/zed/pull/52365) | theme_selector: Fix theme preview not updating on filter changes | 2026-03-24 |
