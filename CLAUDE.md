@@ -63,8 +63,8 @@ When adjusting the CV, follow these rules strictly:
 ```
 cv_adjuster/
   CLAUDE.md              # This guide
-  cv_output.tex          # Generated ATS-optimized CV for the target role
-  cv_output.pdf          # Compiled PDF output
+  cv_output.tex                       # Generated ATS-optimized CV LaTeX source
+  joao_soares_curriculum_vitae.pdf    # Compiled PDF output (ALWAYS use this filename)
   cover_letter.tex       # Generated cover letter (LaTeX source)
   cover_letter.pdf       # Compiled cover letter PDF
   cover_letter.txt       # Plain text version of cover letter
@@ -76,11 +76,13 @@ cv_adjuster/
 
 ## LaTeX Compilation
 
-To generate the PDF, compile with:
+To generate the PDF, compile and rename in one step:
 
 ```bash
-tectonic cv_output.tex
+tectonic cv_output.tex && mv cv_output.pdf joao_soares_curriculum_vitae.pdf
 ```
+
+**The compiled PDF MUST always be named `joao_soares_curriculum_vitae.pdf`** — never deliver `cv_output.pdf` or any other filename. Tectonic writes `cv_output.pdf` by default; always rename after compilation.
 
 **Prerequisites**: Tectonic must be installed. It handles font/package downloads automatically — no separate TeX distribution needed.
 
