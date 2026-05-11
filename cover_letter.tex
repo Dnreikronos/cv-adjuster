@@ -9,37 +9,32 @@
 
 \begin{document}
 
-\begin{flushleft}
-\textbf{Jo\~{a}o Roberto Lawall Soares}\\
+\noindent Jo\~{a}o Roberto Lawall Soares\\
+Lajeado, RS, Brazil\\
 blsoaresdev@gmail.com\\
-+55 51 991363373\\
-\href{https://github.com/Dnreikronos}{github.com/Dnreikronos} \quad \href{https://www.linkedin.com/in/blsoaresdev/}{linkedin.com/in/blsoaresdev}
-\end{flushleft}
++55 51 991363373\\[12pt]
 
-\vspace{8pt}
+\noindent May 7, 2026\\[12pt]
 
-\begin{flushleft}
-May 1, 2026\\
-\vspace{4pt}
-Airbnb\\
-Senior Software Engineer, Insurance Platform
-\end{flushleft}
+\noindent Hiring Team\\
+Akuity\\[12pt]
 
-\vspace{8pt}
+\noindent Dear Hiring Team,
 
-Hi,
+I'm applying for the Senior Golang Engineer position at Akuity. I've spent 6+ years building backend systems, with the last 3+ focused on Go. The work you're doing around Argo CD and Kargo is the kind of infrastructure I want to work on -- developer tooling that has to hold up at scale.
 
-I'm applying for the Senior Software Engineer role on the Insurance Platform team. I've spent the last 6+ years building backend systems in Go and Java, and the work your team does on AirCover (travel insurance, host protection, liability, damage coverage) is the kind of problem I want to work on: high-stakes distributed systems where getting the details right matters.
+At my current role (Platform Builders, contracted to RD Sa\'{u}de), I work on a Go platform processing 140M+ monthly transactions. I tracked down and fixed a concurrency bug in the invoicing pipeline that was causing fiscal compliance failures across distributed Kafka consumers. The fix involved mutex-based synchronization to eliminate race conditions, and we deployed it with zero downtime. I also led the database migration from Oracle to PostgreSQL, rewriting execution plans and adding indexes that cut query times by over a minute on the worst cases.
 
-At my current role, I'm the technical lead on a platform that processes 140M+ monthly invoicing transactions for Brazil's largest pharmaceutical retailer. I fixed a concurrency bug in our Apache Kafka pipeline that was causing fiscal compliance failures, added idempotency controls that brought reliability to 99.99\%, and led a database migration from Oracle to PostgreSQL that cut our slowest queries by over a minute. I also set up the monitoring and logging stack we use to catch problems before they hit production.
+Before that, at Docile Alimentos, I broke apart a Java monolith into containerized microservices, built Go services that pushed throughput up 50\%, and spent a lot of time tuning PostgreSQL and MongoDB queries. I work with Docker, Kubernetes, AWS, Prometheus, and Grafana day to day.
 
-Before that, I spent five years at Docile Alimentos where I led a monolith-to-microservices migration (Java/JSF to Spring Boot), cut MongoDB query times by 85\%, and shipped 50+ features across Java and Go. I worked closely with product and design on engineering decisions, which I understand is important on the Insurance Platform team too.
+Outside of work, I contribute to the Zed code editor, a Rust project with 70k+ GitHub stars. 19 merged PRs across 15+ subsystems -- rendering framework bugs, LSP integration, terminal handling. Working on a developer tool used by thousands of people changed how I think about the developer-facing side of infrastructure. I also built Auto-Issue, a Go backend that takes GitHub issues and produces PRs autonomously, with worktree isolation, a work queue, and PostgreSQL persistence.
 
-On my own time, I contribute to the Zed code editor in Rust (70k+ GitHub stars). I have 19 merged PRs across 15+ subsystems, including fixing a deadlock in the rendering framework and reworking selection logic across 11 files. I also built Auto-Issue, a Go application with a work queue, concurrency limiter, and SSE streaming that turns GitHub issues into reviewed PRs.
+I haven't used Argo CD or Kargo directly, but I work with the patterns they rely on: containerized deployments, CI/CD pipelines, and distributed systems on AWS. I pick up new codebases fast -- the Zed work proves that -- and I'd be glad to get into the GitOps tooling you're building.
 
-The Insurance Platform role asks for experience with distributed systems, concurrency, SQL, monitoring, and cross-functional collaboration. That's what I do every day. I'd like to bring that experience to the AirCover program.
+I'm based in Brazil (GMT-3), which overlaps with US Eastern time. Happy to discuss further.
 
-Best,\\
+\vspace{12pt}
+\noindent Best,\\
 Jo\~{a}o Roberto Lawall Soares
 
 \end{document}

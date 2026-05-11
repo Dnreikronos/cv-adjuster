@@ -1,24 +1,26 @@
 João Roberto Lawall Soares
+Lajeado, RS, Brazil
 blsoaresdev@gmail.com
 +55 51 991363373
-github.com/Dnreikronos | linkedin.com/in/blsoaresdev
 
-May 1, 2026
+May 7, 2026
 
-Airbnb
-Senior Software Engineer, Insurance Platform
+Hiring Team
+Mirantis
 
-Hi,
+Dear Hiring Team,
 
-I'm applying for the Senior Software Engineer role on the Insurance Platform team. I've spent the last 6+ years building backend systems in Go and Java, and the work your team does on AirCover (travel insurance, host protection, liability, damage coverage) is the kind of problem I want to work on: high-stakes distributed systems where getting the details right matters.
+I'm applying for the Senior Software Engineer (Backend) position on the MSR4 product team. I've spent 6+ years building backend systems in Go on Linux, and container infrastructure is where I do my best work. A registry at the center of a secure software supply chain is the kind of problem I want to be working on.
 
-At my current role, I'm the technical lead on a platform that processes 140M+ monthly invoicing transactions for Brazil's largest pharmaceutical retailer. I fixed a concurrency bug in our Apache Kafka pipeline that was causing fiscal compliance failures, added idempotency controls that brought reliability to 99.99%, and led a database migration from Oracle to PostgreSQL that cut our slowest queries by over a minute. I also set up the monitoring and logging stack we use to catch problems before they hit production.
+At Platform Builders (contracted to RD Saúde), I work on a Go platform that handles 140M+ monthly transactions across distributed microservices. I tracked down a concurrency bug in the invoicing pipeline -- a race condition in our Kafka consumers that was causing fiscal compliance failures. Mutex-based synchronization, deployed with zero downtime. I also led the database migration from Oracle to PostgreSQL, rewriting execution plans and adding indexes that cut the slowest queries by over a minute. All of it runs in Docker containers on Linux, with CI/CD pipelines handling the testing and builds.
 
-Before that, I spent five years at Docile Alimentos where I led a monolith-to-microservices migration (Java/JSF to Spring Boot), cut MongoDB query times by 85%, and shipped 50+ features across Java and Go. I worked closely with product and design on engineering decisions, which I understand is important on the Insurance Platform team too.
+At Docile Alimentos before that, I broke apart a Java monolith into containerized Spring Boot microservices and built Go services that pushed throughput up 50%. Spent a lot of time tuning PostgreSQL and MongoDB queries, and wrote automated tests alongside QA to keep regressions out.
 
-On my own time, I contribute to the Zed code editor in Rust (70k+ GitHub stars). I have 19 merged PRs across 15+ subsystems, including fixing a deadlock in the rendering framework and reworking selection logic across 11 files. I also built Auto-Issue, a Go application with a work queue, concurrency limiter, and SSE streaming that turns GitHub issues into reviewed PRs.
+I also contribute to the Zed code editor, a Rust project with 70k+ GitHub stars. 19 merged PRs across 15+ subsystems -- rendering framework, terminal handling, LSP integration. I review other contributors' patches and join design discussions when I can. One of the more satisfying bugs I've fixed was a multi-process deadlock in the GPUI framework that had been freezing the UI on macOS. Working on a codebase that size, written by people much better at Rust than me, taught me how to read unfamiliar code fast and ship fixes that don't break things downstream.
 
-The Insurance Platform role asks for experience with distributed systems, concurrency, SQL, monitoring, and cross-functional collaboration. That's what I do every day. I'd like to bring that experience to the AirCover program.
+I don't have direct Harbor experience, but the ecosystem is familiar -- Docker, Kubernetes, container registries, CI/CD, Linux. The Zed work is probably the best proof that I can get productive in a new codebase quickly. I'd like to do that with MSR.
+
+Based in Brazil (GMT-3), available for a call whenever works for you.
 
 Best,
 João Roberto Lawall Soares
