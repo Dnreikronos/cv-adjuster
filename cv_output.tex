@@ -4,15 +4,11 @@
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage{xcolor}
-\usepackage{amssymb}
 \usepackage{hyperref}
-\usepackage{tabularx}
-\usepackage{array}
 
 \definecolor{headercolor}{RGB}{51, 51, 51}
 \definecolor{subtitlecolor}{RGB}{102, 102, 102}
 \definecolor{accentcolor}{RGB}{0, 102, 204}
-\definecolor{lightgray}{RGB}{245, 245, 245}
 
 \hypersetup{colorlinks=true, linkcolor=accentcolor, urlcolor=accentcolor}
 
@@ -28,138 +24,113 @@
     \textbf{#3} \hfill \textit{#4}\\
 }
 
-\newcommand{\achievementbox}[3]{
-    \begin{minipage}[t]{0.3\textwidth}
-        \centering
-        \colorbox{lightgray}{\makebox[0.9\textwidth][c]{
-            \begin{minipage}{0.85\textwidth}
-                \centering
-                \vspace{3pt}
-                #1\ \textbf{\footnotesize #2}\\[1pt]
-                {\footnotesize #3}
-                \vspace{3pt}
-            \end{minipage}
-        }}
-    \end{minipage}
-}
-
 \begin{document}
 
 \begin{center}
-    {\LARGE\bfseries\color{headercolor} João Roberto Lawall Soares}\\[3pt]
-    {\large\color{subtitlecolor} Full Stack Software Engineer | Golang, PostgreSQL, React \& TypeScript}\\[4pt]
-    {\footnotesize +55 51 991363373 \quad • \quad blsoaresdev@gmail.com \quad • \quad \href{https://www.linkedin.com/in/blsoaresdev/}{LinkedIn} \quad • \quad \href{https://github.com/Dnreikronos}{GitHub} \quad • \quad Lajeado, RS, Brazil (GMT-3)}
+    {\LARGE\bfseries\color{headercolor} Jo\~{a}o Roberto Lawall Soares}\\[3pt]
+    {\large\color{subtitlecolor} Founding Engineer | DeFi \& DEX Architecture | Smart Contracts (Solidity, Rust)}\\[4pt]
+    {\footnotesize +55 51 991363373 \quad \textbullet \quad blsoaresdev@gmail.com \quad \textbullet \quad \href{https://www.linkedin.com/in/blsoaresdev/}{LinkedIn} \quad \textbullet \quad \href{https://github.com/Dnreikronos}{GitHub} \quad \textbullet \quad Lajeado, RS, Brazil (GMT-3)}
 \end{center}
 
 \section{Summary}
-{\footnotesize Full Stack Software Engineer, 6+ years writing Golang and PostgreSQL on the backend with React and TypeScript on the frontend. Built distributed systems and microservices for an invoicing platform that handles 140M+ monthly transactions. Comfortable across the full delivery loop: API design (REST, gRPC, OpenAPI), CI/CD, unit and integration testing, and code review. Daily user of Claude Code and Cursor, and an active Rust contributor to the Zed editor (70k+ GitHub stars).}
+{\footnotesize Engineer building decentralized exchanges and DeFi infrastructure across the smart contract layer, off-chain indexers, keepers, and wallet integrations. Shipped a ZK dark-pool DEX with batch auctions that reduces MEV exposure, a Solana stablecoin compliance protocol verifying Groth16 proofs in under 200K compute units, and production smart contracts in Solidity (Ethereum) and Rust (Solana). 6+ years building production Go systems with tight security and reliability budgets. Used to making pragmatic calls in early-stage environments and mentoring the engineers around me.}
 
-\section{Key Achievements}
-
-\vspace{2pt}
-\noindent
-\achievementbox{$\blacklozenge$}{Distributed Systems}{Fixed a critical concurrency bug across Kafka consumers and Golang services processing 140M+ monthly transactions with zero downtime.}
-\hfill
-\achievementbox{$\blacklozenge$}{PostgreSQL Performance}{Cut PostgreSQL query times by up to 85\% (30s reduction) by rewriting execution plans and adding targeted indexes.}
-\hfill
-\achievementbox{$\blacklozenge$}{AI-Augmented Delivery}{Rolled out Claude Code and Cursor on a Golang team of 6; team velocity went up 30\% the next quarter.}
+\section{Core Skills}
+{\footnotesize
+\textbf{Smart Contracts:} Solidity, Rust (Solana), Anchor, Token-2022, Foundry, Hardhat, Remix IDE, reentrancy guards, gas optimization\\
+\textbf{DeFi \& DEX:} AMMs, order books, batch auctions, hybrid models, liquidity mechanisms, settlement, MEV mitigation, front-running protection, DEX architecture\\
+\textbf{Blockchain Infrastructure:} Ethereum (EVM), Solana, NEAR Protocol, oracles, bridges, cross-chain, SPL tokens, MetaMask, Phantom Wallet integrations\\
+\textbf{Zero-Knowledge:} halo2, arkworks, Groth16 (BN254), Noir, ZK proofs, proof aggregation, on-chain verifiers, Light Protocol state compression\\
+\textbf{Off-Chain Infrastructure:} Indexers (Helius webhooks), keepers, relayers, REST APIs (Go, axum), event-driven architecture, Apache Kafka, Arweave\\
+\textbf{Backend \& Frontend:} Go, Rust, TypeScript, Node.js, NestJS, Next.js, React, Angular, WASM, PostgreSQL, Redis\\
+\textbf{Security \& Operations:} Smart contract testing, security reviews, monitoring, Docker, Kubernetes, CI/CD pipelines, Linux\\
+\textbf{Leadership:} Mentored 60+ Web3 engineers, led 5-engineer team, ran 20+ Solidity workshops
+}
 
 \section{Professional Experience}
 
 \vspace{2pt}
-\experienceheader{Platform Builders}{Brazil (Remote)}{Senior Full Stack Software Engineer (Golang)}{Aug 2025 - Present}
-\textbf{\footnotesize Full-time | RD Sa\'{u}de - Brazil's largest pharmaceutical retailer}
-\begin{itemize}
-    \item {\footnotesize Build core services in Golang and PostgreSQL for an invoicing platform that processes 140M+ monthly transactions; work daily with product managers, designers, and other engineers.}
-    \item {\footnotesize Fixed a concurrency bug in the invoicing pipeline that was causing fiscal compliance failures. Mutex-based synchronization on the Apache Kafka consumers brought duplicate-invoice rate to zero and pushed idempotency to 99.99\%.}
-    \item {\footnotesize Design REST APIs and gRPC services in Golang, document them with OpenAPI / Protocol Buffers, and review pull requests from 5 other engineers each week.}
-    \item {\footnotesize Migrated the database from Oracle to PostgreSQL. Rewrote execution plans and added targeted indexes; the slowest queries dropped by over a minute.}
-    \item {\footnotesize Write unit and integration tests for everything I ship; 15+ Golang features released with zero production incidents.}
-    \item {\footnotesize Reworked goroutine management to cut service latency by 40\%. Set up the CI/CD pipeline (Docker, GitHub Actions) the team uses today.}
-    \item {\footnotesize Got the team onto Claude Code, Cursor, and GitHub Copilot; mentored 5 developers on Go concurrency and architecture. Velocity went up 30\% the following quarter.}
-    \item {\footnotesize Tech Stack: Golang, PostgreSQL, Apache Kafka, Docker, CI/CD, REST API, gRPC, OpenAPI, Microservices, Distributed Systems, Angular, OCI.}
-\end{itemize}
-
-\vspace{2pt}
-\experienceheader{Docile Alimentos LTDA}{Lajeado, RS, Brazil (Remote)}{Full Stack Software Engineer}{Jan 2020 - Aug 2025}
-\textbf{\footnotesize Full-time}
-\begin{itemize}
-    \item {\footnotesize Built Golang backend services for distributed data pipelines. New concurrency patterns pushed throughput up 50\%.}
-    \item {\footnotesize Shipped full-stack features: React and TypeScript on the frontend, Golang / NestJS / Spring Boot REST APIs on the backend, working directly with product and design.}
-    \item {\footnotesize Broke a Java/JSF monolith into Spring Boot microservices with an Angular frontend. Performance went up 40\% and each service got its own CI/CD pipeline.}
-    \item {\footnotesize Tuned 20+ PostgreSQL queries (schemas, indexes, plans) for 45\% average speedup. Reworked MongoDB aggregation pipelines and cut their times by 85\%.}
-    \item {\footnotesize Wrote unit and integration tests across Golang, Java, and TypeScript; reviewed pull requests with the rest of the team.}
-    \item {\footnotesize Automated file imports with RPA, saving the ops team 15 hours a week (70\% reduction). Shipped 50+ bug fixes and features with 98\% on-time delivery.}
-    \item {\footnotesize Tech Stack: Golang, React, TypeScript, JavaScript, Java, Spring Boot, NestJS, Angular, PostgreSQL, MongoDB, SQL Server, Docker, CI/CD, REST API, Microservices, Linux.}
-\end{itemize}
-
-\vspace{2pt}
-\experienceheader{Borderless Coding}{London Area, UK (Remote)}{Web3 Technical Mentor \& Ambassador}{Sep 2025 - Present}
+\experienceheader{Borderless Coding}{London Area, UK (Remote)}{Web3 Technical Mentor \& Ambassador}{Sep 2025 -- Present}
 \textbf{\footnotesize Part-time}
 \begin{itemize}
-    \item {\footnotesize Mentored 60+ engineers on smart contract architecture and API design; 95\% satisfaction across cohorts.}
-    \item {\footnotesize Ran 20+ live workshops on Solidity, Foundry, Hardhat, and AI-assisted dev workflows (Claude Code, Cursor).}
+    \item {\footnotesize Mentored 60+ engineers on Solidity smart contract development, DEX architecture, and DeFi protocol design with a 95\% satisfaction rate across cohorts.}
+    \item {\footnotesize Ran 20+ live workshops on smart contract development, security patterns, and gas optimization using Foundry, Hardhat, and Remix IDE. 90\% completion rate.}
+    \item {\footnotesize Wrote hands-on material covering Ethereum, Solana, AMMs, order books, oracles, and cross-chain primitives. Community grew 200\%.}
 \end{itemize}
 
-\section{Technical Skills}
+\vspace{2pt}
+\experienceheader{Platform Builders}{Brazil (Remote)}{Senior Backend Engineer}{Aug 2025 -- Present}
+\textbf{\footnotesize Full-time | RD Sa\'{u}de -- Brazil's largest pharmaceutical retailer}
+\begin{itemize}
+    \item {\footnotesize Fixed a concurrency bug in a distributed pipeline processing 140M+ monthly transactions. Applied mutex-based synchronization to eliminate the race condition with zero downtime.}
+    \item {\footnotesize Added mutex-based locking to Apache Kafka consumers, reaching 99.99\% idempotency and stopping duplicate event processing across the microservice cluster.}
+    \item {\footnotesize Migrated database layer from Oracle to PostgreSQL. Rewrote execution plans and added targeted indexes, cutting query times by over 1 minute on the slowest queries.}
+    \item {\footnotesize Shipped 15+ features in Go with zero production incidents. Reworked goroutine management to reduce system latency by 40\%.}
+    \item {\footnotesize Mentored 5 engineers on Go concurrency patterns and distributed system architecture. Team velocity went up 30\% over the following quarter.}
+    \item {\footnotesize Tech Stack: Go, Apache Kafka, PostgreSQL, Docker, Kubernetes, CI/CD pipelines, REST APIs, microservices.}
+\end{itemize}
 
 \vspace{2pt}
-\noindent{\footnotesize
-\textbf{Languages:} Go (Golang), TypeScript, JavaScript, Java, Rust, SQL, Bash, Solidity\\
-\textbf{Backend:} Golang, REST API, gRPC, Protocol Buffers, OpenAPI / Swagger, GraphQL, Microservices, Spring Boot, NestJS, Express.js\\
-\textbf{Frontend:} React, TypeScript, JavaScript, Next.js, Angular, HTML5, CSS3\\
-\textbf{Databases:} PostgreSQL, MongoDB, Redis, MySQL, SQL Server, Query Optimization, Schema Design\\
-\textbf{Distributed Systems:} Apache Kafka, RabbitMQ, Amazon SQS, Event-Driven Architecture, Microservices, System Design\\
-\textbf{Cloud \& DevOps:} AWS (EC2, S3, RDS, Lambda), Docker, Kubernetes, CI/CD Pipelines, Linux, Grafana, Prometheus, ELK Stack, Application Performance Monitoring\\
-\textbf{Architecture:} Clean Architecture, SOLID, Design Patterns, DDD, TDD, Distributed Systems Design, API Design\\
-\textbf{Testing:} Unit Testing, Integration Testing, TDD, Code Review, Continuous Integration\\
-\textbf{AI-Augmented Engineering:} Claude Code, Cursor, GitHub Copilot, AI-assisted code review, automated documentation\\
-\textbf{Tools:} Git, GitHub, GitLab, Jira, Agile/Scrum
-}
+\experienceheader{Docile Alimentos LTDA}{Lajeado, RS, Brazil (Remote)}{Backend Engineer}{Jan 2020 -- Aug 2025}
+\textbf{\footnotesize Full-time}
+\begin{itemize}
+    \item {\footnotesize Built Go backend services with concurrency patterns that raised throughput by 50\% in production systems with tight reliability and security requirements.}
+    \item {\footnotesize Broke apart a monolith into microservices behind REST APIs. Performance improved 40\%.}
+    \item {\footnotesize Rewrote indexes on 20+ PostgreSQL queries (45\% average speedup) and reworked MongoDB aggregation pipelines, cutting query times by 85\% (30s reduction).}
+    \item {\footnotesize Shipped 50+ features and fixes across the stack on schedule (98\% on-time delivery).}
+    \item {\footnotesize Tech Stack: Go, Node.js, React, Angular, Docker, Linux, PostgreSQL, MongoDB, REST APIs.}
+\end{itemize}
+
+\section{DeFi \& Web3 Projects}
+
+\vspace{2pt}
+\noindent\textbf{\footnotesize DarkPool-Exchange | ZK Dark Pool DEX with Batch Auctions} \textbullet{} {\footnotesize\href{https://github.com/Dnreikronos/DarkPool-Exchange}{GitHub}}\\
+{\footnotesize Hybrid DEX where orders stay private until settlement. Traders encrypt orders to the operator and the engine matches them in periodic batch auctions (5s rounds) with a uniform clearing price per round, cutting front-running and MEV exposure. Built the Rust and on-chain layer end to end: halo2 / arkworks circuits proving order validity, client-side proof generation in Rust (WASM and native CLI), a proof aggregator that batches per-order proofs into a single on-chain check for gas efficiency, and integration with the Solidity verifier and settlement contract. Order size and price surface only after the round closes.}
+
+\vspace{2pt}
+\noindent\textbf{\footnotesize zkSettle | ZK Compliance Infrastructure for Solana Stablecoins} \textbullet{} {\footnotesize\href{https://github.com/yuribodo/zksettle}{GitHub}}\\
+{\footnotesize Solana compliance layer for stablecoin protocols. Proves travel-rule and sanctions conformance without putting user PII on-chain. Built the Rust and on-chain side: Anchor program with a Token-2022 Transfer Hook that verifies Groth16 proofs (BN254) via Solana \texttt{alt\_bn128} syscalls in under 200K compute units, nullifier storage on Light Protocol state compression, plus the off-chain Rust workspace (issuer service, OFAC sanctions updater with a Sparse Merkle Tree, Helius-webhook indexer pinning attestations to Arweave, axum API gateway). Browser-side proof generation via Noir + WASM keeps PII off the device.}
+
+\vspace{2pt}
+\noindent\textbf{\footnotesize Crypto-Tip | Cross-Chain Tipping Smart Contracts} \textbullet{} {\footnotesize\href{https://github.com/Dnreikronos/crypto-tip}{GitHub (34 Stars)}}\\
+{\footnotesize Smart contracts in Solidity (Ethereum) and Rust (Solana) for open-source funding. Wallet integrations with MetaMask and Phantom. Reentrancy guards, access control, and event-driven on-chain accounting.}
+
+\vspace{2pt}
+\noindent\textbf{\footnotesize givemoney.fun | Web3 Streaming Donation Platform}\\
+{\footnotesize Solidity (Ethereum) and Rust (Solana) smart contracts for streamers to receive on-chain donations. Built reentrancy guards, withdrawal queues, and wallet integrations.}
+
+\vspace{2pt}
+\noindent\textbf{\footnotesize Pattpay | On-Chain Subscription Payments on Solana} \textbullet{} {\footnotesize\href{https://github.com/Dnreikronos/pattpay}{GitHub (Cypherpunk Hackathon)}}\\
+{\footnotesize Recurring billing on Solana with sub-second finality. Smart contracts handle authorization, scheduled SPL token transfers, and on-chain accounting under tight compute budgets.}
+
+\vspace{2pt}
+\noindent\textbf{\footnotesize Proof Of Learn | NEAR Protocol + ZK Credentials} \textbullet{} {\footnotesize\href{https://github.com/Dnreikronos/proof-of-learn}{GitHub (NearX \& ZKVerify Hackathon)}}\\
+{\footnotesize NEAR Protocol smart contracts that issue NFT credentials backed by zero-knowledge proofs. Integrates AI-generated learning roadmaps with on-chain incentive mechanisms.}
 
 \section{Open Source Contributions}
 
 \vspace{2pt}
-\noindent\textbf{\footnotesize Zed Editor} • {\footnotesize\href{https://github.com/zed-industries/zed}{GitHub (70k+ Stars)} — Rust}\\
-{\footnotesize Contributor to Zed, a code editor written in Rust. 53 PRs submitted (19 merged) across 15+ subsystems, totaling 5,000+ lines:}
+\noindent\textbf{\footnotesize Zed Editor} \textbullet{} {\footnotesize\href{https://github.com/zed-industries/zed}{GitHub (70k+ Stars)} -- Rust}\\
+{\footnotesize 56 PRs (30 merged) across 15+ subsystems, totaling 6,800+ lines in Rust:}
 \begin{itemize}
-    \item {\footnotesize Found and fixed a macOS deadlock in the GPUI rendering framework where re-entrant key status changes froze the UI. (\href{https://github.com/zed-industries/zed/pull/51035}{\#51035} -- Merged)}
-    \item {\footnotesize Reworked picker selection logic across 11 files so non-selectable entries can no longer confirm unintended actions in the command palette. (\href{https://github.com/zed-industries/zed/pull/50705}{\#50705} -- Merged, +185/-51)}
-    \item {\footnotesize Fixed \texttt{formatter: "auto"} so it skips language servers that cannot actually format, instead of failing silently. (\href{https://github.com/zed-industries/zed/pull/50661}{\#50661} -- Merged)}
-    \item {\footnotesize Fixed semantic tokens not appearing when opening buffer from multibuffer, restoring accurate syntax highlighting in a core editor flow. (\href{https://github.com/zed-industries/zed/pull/53712}{\#53712} -- Merged)}
-    \item {\footnotesize Debugged and fixed terminal rendering missing the first line due to floating-point tolerance in the layout calculation. (\href{https://github.com/zed-industries/zed/pull/52111}{\#52111} -- Merged)}
-    \item {\footnotesize Also contributed to GPUI, DAP debugger, theme selector, markdown rendering, and platform fixes on macOS and Linux/X11. (\href{https://github.com/zed-industries/zed/pulls?q=author\%3ADnreikronos}{View all PRs})}
+    \item {\footnotesize Fixed a macOS deadlock in the GPUI rendering framework where re-entrant key status changes froze the UI. (\href{https://github.com/zed-industries/zed/pull/51035}{\#51035} -- Merged)}
+    \item {\footnotesize Reworked picker selection logic across 11 files so non-selectable entries no longer trigger unintended actions. (\href{https://github.com/zed-industries/zed/pull/50705}{\#50705} -- Merged, +185/-51)}
+    \item {\footnotesize Fixed visible escape characters in LSP diagnostic messages rendered via markdown. (\href{https://github.com/zed-industries/zed/pull/51766}{\#51766} -- Merged, +195/-27)}
+    \item {\footnotesize Fixed semantic tokens not appearing when opening a buffer from multibuffer. (\href{https://github.com/zed-industries/zed/pull/53712}{\#53712} -- Merged)}
+    \item {\footnotesize Additional contributions to GPUI, DAP debugger, theme selector, markdown rendering, terminal, and platform-specific macOS/Linux fixes. (\href{https://github.com/zed-industries/zed/pulls?q=author\%3ADnreikronos}{View all PRs})}
 \end{itemize}
-
-\section{Projects}
-
-\vspace{2pt}
-\noindent\textbf{\footnotesize Auto-Issue | Autonomous GitHub Issue Agent} • {\footnotesize\href{https://github.com/yuribodo/auto-issue}{GitHub}}\\
-{\footnotesize Electron + Go app that takes a GitHub issue, hands it to an AI agent (Claude Code, OpenAI Codex, or Gemini), and opens a PR with self-reviewed code. Built the entire Go backend: multi-provider agent runner that spawns CLI subprocesses over PTY, an orchestrator with a work queue and concurrency limiter, per-issue git worktree isolation, SSE streaming to the frontend, and a 15+ endpoint REST API. Persistence via GORM and PostgreSQL.}
-
-\vspace{2pt}
-\noindent\textbf{\footnotesize Veste AI | AI-Powered Fashion Assistant} • {\footnotesize\href{https://github.com/Dnreikronos/HB02-2025_braindancers}{GitHub}}\\
-{\footnotesize Golang backend that calls the Google Gemini API to analyze outfits. REST API with cloud-based image processing. Built at a hackathon.}
-
-\vspace{2pt}
-\noindent\textbf{\footnotesize DarkPool-Exchange | ZK Dark Pool DEX with Batch Auctions} • {\footnotesize\href{https://github.com/Dnreikronos/DarkPool-Exchange}{GitHub}}\\
-{\footnotesize DEX where orders stay private until settlement. Traders encrypt orders to the operator and the engine matches them in periodic batch auctions with a clearing price per round. Built the Rust + Web3 layer: halo2 / arkworks circuits, WASM proof generation, on-chain proof aggregator, and Solidity verifier integration.}
-
-\vspace{2pt}
-\noindent\textbf{\footnotesize Crypto-Tip | Decentralized Tipping Platform} • {\footnotesize\href{https://github.com/Dnreikronos/crypto-tip}{GitHub (34 Stars)}}\\
-{\footnotesize Smart contracts in Solidity (Ethereum) and Rust (Solana) for open-source funding. MetaMask and Phantom wallet integrations.}
 
 \section{Education}
 
 \vspace{2pt}
-\noindent\textbf{\footnotesize Universidade do Vale do Taquari - Univates} \hfill {\footnotesize 2021 - 2025}\\
+\noindent\textbf{\footnotesize Universidade do Vale do Taquari -- Univates} \hfill {\footnotesize 2021 -- 2025}\\
 {\footnotesize Bachelor's Degree, Computer Science}
 
 \section{Languages}
 
 \vspace{2pt}
 \begin{center}
-{\footnotesize \textbf{English} - Proficient (Professional Working Proficiency) \quad\quad \textbf{Portuguese} - Native Speaker}
+{\footnotesize \textbf{English} -- Professional Working Proficiency \quad\quad \textbf{Portuguese} -- Native Speaker}
 \end{center}
 
 \end{document}
