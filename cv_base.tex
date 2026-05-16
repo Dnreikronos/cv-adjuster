@@ -71,7 +71,7 @@
 \textbf{\footnotesize Full-time | RD Sa\'{u}de - Brazil's largest pharmaceutical retailer}
 \begin{itemize}
     \item {\footnotesize Fixed a concurrency bug in the invoicing pipeline that caused fiscal compliance failures across 140M+ monthly transactions. Used mutex-based synchronization to eliminate the race condition.}
-    \item {\footnotesize Added mutex-based locking to Apache Kafka consumers, reaching 99.99\% idempotency and stopping duplicate invoice generation entirely.}
+    \item {\footnotesize Hardened Apache Kafka consumers with lock-based deduplication, reaching 99.99\% idempotency and stopping duplicate invoice generation entirely.}
     \item {\footnotesize Migrated the database layer from Oracle to PostgreSQL. Rewrote execution plans and added targeted indexes, cutting query times by over 1 minute on the slowest queries.}
     \item {\footnotesize Eliminated Oracle Database licensing fees and cut JVM memory footprint by migrating the invoicing stack from Java/Oracle to Golang/PostgreSQL, saving roughly \$10k in licensing and compute costs.}
     \item {\footnotesize Maintained 98\%+ unit test coverage across 60+ Golang microservices, catching regressions before they reached the invoicing pipeline.}
