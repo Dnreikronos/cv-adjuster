@@ -155,11 +155,11 @@
 
 \vspace{2pt}
 \noindent\textbf{\footnotesize Auto-Issue | Autonomous GitHub Issue Agent} • {\footnotesize\href{https://github.com/yuribodo/auto-issue}{GitHub}}\\
-{\footnotesize Electron + Go app that takes a GitHub issue, sends it to an AI agent (Claude Code, OpenAI Codex, or Gemini), and produces a PR with self-reviewed code. Built the entire Go backend: multi-provider agent system that spawns CLI subprocesses with PTY streaming, an orchestrator with a work queue and concurrency limiter managing the issue lifecycle (backlog, developing, code review, human review, done), git worktree isolation per issue, SSE real-time output to the frontend, and a REST API with 15+ endpoints. Backend uses GORM with PostgreSQL for persistence.}
+{\footnotesize Electron desktop + Go backend tool that drives a Kanban of GitHub issues through an AI agent (Claude Code, OpenAI Codex, or Gemini), running each agent locally as a CLI subprocess with PTY streaming. Built the entire Go backend: REST + SSE API, per-issue git worktree isolation, multi-provider agent orchestration with a self-review and human-approval loop (up to 3 feedback rounds), and PostgreSQL-backed state.}
 
 \vspace{2pt}
-\noindent\textbf{\footnotesize Crypto-Tip | Decentralized Tipping Platform} • {\footnotesize\href{https://github.com/Dnreikronos/crypto-tip}{GitHub (34 Stars)}}\\
-{\footnotesize Smart contracts in Solidity (Ethereum) and Rust (Solana) for open-source funding. Integrates MetaMask and Phantom wallets.}
+\noindent\textbf{\footnotesize Crypto-Tip | Decentralized Tipping Platform} • {\footnotesize\href{https://github.com/Dnreikronos/crypto-tip}{GitHub (35 Stars)}}\\
+{\footnotesize Open-source funding platform where developers register projects to receive crypto donations. Wrote Solidity smart contracts (Ethereum) and Solana programs in Rust, with a Go backend and React/TypeScript frontend integrating MetaMask and Phantom wallets.}
 
 \vspace{2pt}
 \noindent\textbf{\footnotesize givemoney.fun | Web3 Streaming Donation Platform}\\
@@ -167,15 +167,15 @@
 
 \vspace{2pt}
 \noindent\textbf{\footnotesize Veste AI | AI-Powered Fashion Assistant} • {\footnotesize\href{https://github.com/Dnreikronos/HB02-2025_braindancers}{GitHub}}\\
-{\footnotesize Golang backend that uses the Google Gemini API to analyze outfits. Built at a hackathon. REST API with cloud-based image processing.}
+{\footnotesize Hackathon project (team of 3): React + Go web app that analyzes user-uploaded outfit photos via the Google Gemini API and returns personalized styling tips. Built the Go REST API powering the image upload and AI analysis pipeline.}
 
 \vspace{2pt}
 \noindent\textbf{\footnotesize Proof Of Learn | AI + Web3 Platform} • {\footnotesize\href{https://github.com/Dnreikronos/proof-of-learn}{GitHub (NearX \& ZKVerify Hackathon)}}\\
-{\footnotesize Generates AI-powered learning roadmaps with on-chain incentives. Uses NEAR Protocol and Zero-Knowledge Proofs for NFT credential issuance.}
+{\footnotesize Hackathon submission (NearX \& ZKVerify): generates AI-powered learning roadmaps via Google Gemini, validates knowledge through quizzes, and issues on-chain NFT credentials. Built with Solidity smart contracts (Foundry), a Node/Express + TypeScript API, and Circom ZK circuits for verifiable proof of learning.}
 
 \vspace{2pt}
-\noindent\textbf{\footnotesize Pattpay | Web3 Payment Gateway} • {\footnotesize\href{https://github.com/Dnreikronos/pattpay}{GitHub (Cypherpunk Hackathon)}}\\
-{\footnotesize Subscription billing on Solana. Smart contracts handle recurring payments with sub-second finality using SPL tokens.}
+\noindent\textbf{\footnotesize Pattpay | Web3 Payment Gateway} • {\footnotesize\href{https://github.com/Dnreikronos/pattpay}{GitHub (26 Stars, Cypherpunk Hackathon)}}\\
+{\footnotesize Web3 payment gateway on Solana for one-time and recurring subscription payments. Smart contracts in Anchor/Rust use a delegate-authority PDA to charge subscribers automatically via a backend scheduler/processor pipeline (Fastify + Prisma + PostgreSQL). Supports SPL Token and Token-2022, with \textasciitilde400ms finality and <\$0.01 fees.}
 
 \section{Education}
 
