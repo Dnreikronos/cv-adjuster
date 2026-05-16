@@ -73,9 +73,13 @@
     \item {\footnotesize Fixed a concurrency bug in the invoicing pipeline that caused fiscal compliance failures across 140M+ monthly transactions. Used mutex-based synchronization to eliminate the race condition.}
     \item {\footnotesize Added mutex-based locking to Apache Kafka consumers, reaching 99.99\% idempotency and stopping duplicate invoice generation entirely.}
     \item {\footnotesize Migrated the database layer from Oracle to PostgreSQL. Rewrote execution plans and added targeted indexes, cutting query times by over 1 minute on the slowest queries.}
-    \item {\footnotesize Shipped 15+ features in Golang with zero production incidents. Reworked goroutine management to reduce system latency by 40\%.}
+    \item {\footnotesize Eliminated Oracle Database licensing fees and cut JVM memory footprint by migrating the invoicing stack from Java/Oracle to Golang/PostgreSQL, saving roughly \$10k in licensing and compute costs.}
+    \item {\footnotesize Maintained 98\%+ unit test coverage across 60+ Golang microservices, catching regressions before they reached the invoicing pipeline.}
+    \item {\footnotesize Helped roll out Datadog Orchestrion auto-instrumentation across 60+ Golang microservices, giving DevOps and engineers full request tracing and runtime visibility into production behavior.}
+    \item {\footnotesize Refactored goroutine lifecycle and pool management across backend services, reducing request latency by 40\%.}
+    \item {\footnotesize Helped build the company's first AI feature: a Retrieval-Augmented Generation (RAG) system letting users query business rules and endpoint/screen behavior in natural language.}
     \item {\footnotesize Mentored 5 developers on Go concurrency patterns and architecture. Team velocity went up 30\% over the following quarter.}
-    \item {\footnotesize Tech Stack: Golang, Apache Kafka, PostgreSQL, Docker, OCI (Oracle Cloud), Angular, REST API, Microservices.}
+    \item {\footnotesize Tech Stack: Golang, Apache Kafka, PostgreSQL, Docker, Kubernetes, ArgoCD, Datadog, OCI (Oracle Cloud), REST API, Microservices.}
 \end{itemize}
 
 \vspace{2pt}
